@@ -179,11 +179,44 @@
     <Compile Include="Migrations\201906131012594_InicialModel.Designer.cs">
       <DependentUpon>201906131012594_InicialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906141150440_InitialModel.cs" />
+    <Compile Include="Migrations\201906141150440_InitialModel.Designer.cs">
+      <DependentUpon>201906141150440_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906141156449_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201906141156449_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201906141156449_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906141209491_AdmebeshipType.cs" />
+    <Compile Include="Migrations\201906141209491_AdmebeshipType.Designer.cs">
+      <DependentUpon>201906141209491_AdmebeshipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906141211420_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201906141211420_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201906141211420_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906141220371_CorrigirDurationInMonths.cs" />
+    <Compile Include="Migrations\201906141220371_CorrigirDurationInMonths.Designer.cs">
+      <DependentUpon>201906141220371_CorrigirDurationInMonths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906141224577_fix.cs" />
+    <Compile Include="Migrations\201906141224577_fix.Designer.cs">
+      <DependentUpon>201906141224577_fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906141230014_ApplyCustomerName.cs" />
+    <Compile Include="Migrations\201906141230014_ApplyCustomerName.Designer.cs">
+      <DependentUpon>201906141230014_ApplyCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906141606160_AddNae.cs" />
+    <Compile Include="Migrations\201906141606160_AddNae.Designer.cs">
+      <DependentUpon>201906141606160_AddNae.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Custumer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -270,6 +303,30 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906131012594_InicialModel.resx">
       <DependentUpon>201906131012594_InicialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906141150440_InitialModel.resx">
+      <DependentUpon>201906141150440_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906141156449_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201906141156449_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906141209491_AdmebeshipType.resx">
+      <DependentUpon>201906141209491_AdmebeshipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906141211420_PopulateMembershipTypes.resx">
+      <DependentUpon>201906141211420_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906141220371_CorrigirDurationInMonths.resx">
+      <DependentUpon>201906141220371_CorrigirDurationInMonths.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906141224577_fix.resx">
+      <DependentUpon>201906141224577_fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906141230014_ApplyCustomerName.resx">
+      <DependentUpon>201906141230014_ApplyCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906141606160_AddNae.resx">
+      <DependentUpon>201906141606160_AddNae.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

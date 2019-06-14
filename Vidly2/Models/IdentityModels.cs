@@ -1,8 +1,10 @@
-﻿using System.Data.Entity;
+﻿using System.Configuration;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Vidly.Models;
 
 namespace Vidly2.Models
 {
@@ -20,9 +22,14 @@ namespace Vidly2.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<MembershipType> MembershipTypes { get; set; }
+        public DbSet<Custumer> Customers { get; set; }        
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            //Database.SetInitializer(new  MigrateDatabaseToLatestVersion<ApplicationDbContext, Migrations.Configuration>());
+
         }
 
         public static ApplicationDbContext Create()
