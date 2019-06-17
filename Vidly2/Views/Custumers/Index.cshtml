@@ -1,16 +1,16 @@
-﻿@model IEnumerable<Vidly.Models.Custumer>
+﻿@model IEnumerable<Vidly.Models.Customer>
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Custumers</h2>
+<h2>Customers</h2>
 <table class="table table-bordered table-hover">
     <thead>
     <tr>
-        <th>Custumers</th>
-        <th>Discount Rate</th>
+        <th>Customers</th>
+        <th>Membership Type</th>
     </tr>
     </thead>
     <tbody>
@@ -27,8 +27,8 @@
         foreach (var custumer in Model)
         {
             <tr>
-                <td>@Html.ActionLink(custumer.Name, "Details", "Custumers", new {id = custumer.Id}, null)</td>
-                <td>@custumer.MembershipType.DiscountRate%</td>
+                <td>@Html.ActionLink(custumer.Name, "Edit", "Custumers", new {id = custumer.Id}, null)</td>
+                <td>@custumer.MembershipType.Name</td>
             </tr>
         }
     }

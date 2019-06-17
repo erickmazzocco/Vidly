@@ -1,40 +1,81 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
+using Vidly2.Models;
+using Vidly2.ViewModels;
 
 namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public MoviesController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
         public ViewResult Index()
         {
-            var movies = GetMovies();
+            var movies = _context.Movie.Include(x => x.Genre).ToList();
 
             return View(movies);
         }
 
-        public ViewResult Details(int Id)
+        public ActionResult Edit(int Id)
         {
-            return View(GetMovies().First(x => x.Id == Id));
-        }
+            var movie = _context.Movie.Include(x => x.Genre).ToList().SingleOrDefault(x => x.Id == Id);
 
-        private  IEnumerable<Movie> GetMovies()
-        {
-            return new List<Movie>()
+            var viewModel = new MovieFormViewModel(movie)
             {
-                new Movie()
-                {
-                    Id = 1, Name = "Érick"
-                },
-                new Movie()
-                {
-                    Id = 2, Name = "Xuxu"
-                }
+                Genres = _context.Genres.ToList(),
             };
+
+            return View("MovieForm", viewModel);
         }
 
+        [ValidateAntiForgeryToken]
+        public ActionResult Save(Movie movie)
+        {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieFormViewModel(movie)
+                {
+                    Genres = _context.Genres.ToList()
+                };
+
+                return View("MovieForm", viewModel);
+            }
+
+            if (movie.Id == 0)
+            {
+                movie.DateAdded = DateTime.Now;
+                _context.Movie.Add(movie);
+            }
+                
+            else
+            {
+                var movieDb = _context.Movie.Single(x => x.Id == movie.Id);
+
+                movieDb.Name = movie.Name;
+                movieDb.ReleaseDate = movie.ReleaseDate;
+                movieDb.DateAdded = movie.DateAdded;
+                movieDb.NumberInStock = movie.NumberInStock;
+                movieDb.GenreId = movie.GenreId;
+            }
+
+            _context.SaveChanges();
+
+            return View("Index", _context.Movie.Include(x => x.Genre).ToList());
+        }
     }
 }
