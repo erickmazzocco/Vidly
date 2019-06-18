@@ -346,3 +346,4 @@ C:\Users\Érick\Documents\Github\Vidly\Vidly2\bin\System.Web.Http.xml
 C:\Users\Érick\Documents\Github\Vidly\Vidly2\bin\System.Web.Http.WebHost.xml
 C:\Users\Érick\Documents\Github\Vidly\Vidly2\bin\AutoMapper.dll
 C:\Users\Érick\Documents\Github\Vidly\Vidly2\bin\AutoMapper.xml
+C:\Users\Érick\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.requireDateTime.resources
