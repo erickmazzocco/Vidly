@@ -5,6 +5,7 @@ using System.Web;
 using AutoMapper;
 using Vidly.Models;
 using Vidly2.Dtos;
+using Vidly2.Models;
 
 namespace Vidly2.App_Start
 {
@@ -14,6 +15,8 @@ namespace Vidly2.App_Start
         {
             Mapper.CreateMap<Customer, CustomerDto>();
             Mapper.CreateMap<CustomerDto, Customer>();
+            Mapper.CreateMap<MembershipType, MembershipTypeDto>();
+            Mapper.CreateMap<Genre, GenreDto>();
 
             Mapper.CreateMap<Movie, MovieDto>();
             Mapper.CreateMap<MovieDto, Movie>();

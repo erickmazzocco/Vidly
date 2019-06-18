@@ -347,3 +347,17 @@ C:\Users\Érick\Documents\Github\Vidly\Vidly2\bin\System.Web.Http.WebHost.xml
 C:\Users\Érick\Documents\Github\Vidly\Vidly2\bin\AutoMapper.dll
 C:\Users\Érick\Documents\Github\Vidly\Vidly2\bin\AutoMapper.xml
 C:\Users\Érick\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.requireDateTime.resources
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\bin\AutoMapper.dll
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\bin\System.Net.Http.Formatting.dll
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\bin\System.Web.Http.dll
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\bin\System.Web.Http.WebHost.dll
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\bin\AutoMapper.xml
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\bin\System.Net.Http.Formatting.xml
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\bin\System.Web.Http.xml
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\bin\System.Web.Http.WebHost.xml
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.AddDataCustumersAndMembership.resources
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.AddBirthdate.resources
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.AddGenreMoviesDatetime.resources
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.AddDataMoviesGenre.resources
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.fixname.resources
+C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.requireDateTime.resources

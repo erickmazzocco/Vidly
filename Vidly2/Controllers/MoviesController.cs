@@ -26,14 +26,15 @@ namespace Vidly.Controllers
 
         public ViewResult Index()
         {
-            var movies = _context.Movie.Include(x => x.Genre).ToList();
-
-            return View(movies);
+            return View();
         }
 
         public ActionResult Edit(int Id)
         {
             var movie = _context.Movie.Include(x => x.Genre).ToList().SingleOrDefault(x => x.Id == Id);
+
+            if (movie == null)
+                return HttpNotFound();
 
             var viewModel = new MovieFormViewModel(movie)
             {
@@ -68,7 +69,7 @@ namespace Vidly.Controllers
 
                 movieDb.Name = movie.Name;
                 movieDb.ReleaseDate = movie.ReleaseDate;
-                movieDb.DateAdded = movie.DateAdded;
+                movieDb.DateAdded =  movie.DateAdded.Equals(DateTime.MinValue) ? DateTime.Now : movie.DateAdded;
                 movieDb.NumberInStock = movie.NumberInStock;
                 movieDb.GenreId = movie.GenreId;
             }
