@@ -361,3 +361,4 @@ C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migration
 C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.AddDataMoviesGenre.resources
 C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.fixname.resources
 C:\Users\erick.mazzocco\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.requireDateTime.resources
+C:\Users\Érick\Documents\Github\Vidly\Vidly2\obj\Debug\Vidly2.Migrations.SeedUsers.resources
